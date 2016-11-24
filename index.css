@@ -127,12 +127,19 @@ h1 {
 }
 
 @media (max-width: 960px) {
+  header {
+    background:  linear-gradient(
+        rgba(0, 0, 255, 0.2),
+        rgba(0, 0, 255, 0.2))
+  }
+
   #banner-words {
     letter-spacing: 5px;
   }
 
   section.content-link {
     padding: 20px;
+    width: 100%;
   }
 
   .left {
@@ -143,8 +150,12 @@ h1 {
     padding-bottom: 10;
   }
 
+  #cch h1 {
+    font-size: 25pt;
+  }
+
   #lgd {
-    font-size: 45pt;
+    font-size: 25pt;
   }
 
 }
