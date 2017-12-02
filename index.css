@@ -28,7 +28,7 @@ a {
 }
 
 .name {
-  font-size: 10vw;
+  font-size: 25vh;
   color: white;
   font-family: 'ubuntu', sans-serif;
   margin-right: auto;
@@ -39,11 +39,11 @@ a {
 
 .name p {
   font-weight: 100;
-  letter-spacing: .1vw;
+  letter-spacing: .1vh;
 }
 
 .info {
-  font-size: 5vw;
+  font-size: 10vh;
   color: white;
   font-family: 'ubuntu', sans-serif;
   margin-right: auto;
