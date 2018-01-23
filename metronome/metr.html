@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Metronome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="../index.css">
+    <link type="text/css" rel="stylesheet" href="metr.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body class="menu">
+    <header>
+      <nav>
+        <div class="navigation">
+          <ul class="nav-container">
+            <li id="gray" class="nav-items"><a href="nopageyet.html" target="_blank">I WENT TO PANAMA!</a></li>
+            <li id="dark-gray" class="nav-items"><a href="nopageyet.html" target="_blank">ABOUT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <nav class="menu-side">
+        <ul>
+          <li class="side-nav-items"><a href="nopageyet.html">PANAMA</a></li>
+          <li class="side-nav-items"><a href="nopageyet.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <a href="#" class="menu-toggle">
+      <div class="nav-button">
+        &#9776;
+      </div>
+    </a>
+
+    <section class="page-content">
+      <div class="metronome-holder">
+        <form>
+          Tempo:</br>
+          <input type="number" id="tempo" value="60"></input>
+        </form>
+        <button id="play">
+          play
+        </button>
+        <button id="pause">
+          pause
+        </button>
+      </div>
+    </section>
+
+    <!-- js -->
+    <script src="metr.js"></script>
+
+  </body>
+</html>
