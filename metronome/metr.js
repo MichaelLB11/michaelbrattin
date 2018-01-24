@@ -28,13 +28,21 @@ class Metronome {
     if (this.isActive()) {
       console.log('bump');
       tick.play();
+      console.log(this.tempo);
     }
   }
 
-
-  setTempo(tempo) {
+  setTempo(bpm) {
     clearInterval(this.theInterval);
-    this.tempo = 60000 / tempo;
+    this.tempo = 60000 / bpm;
+    this.run();
+  }
+
+  tap() {
+    prev = current;
+    current = Date.now();
+    clearInterval(this.theInterval);
+    this.tempo = current - prev;
     this.run();
   }
 
@@ -47,13 +55,17 @@ class Metronome {
   getTempo() {
     return this.tempo;
   }
-
 }
 
 var tempo = document.getElementById('tempo').value;
-tempo = tempo;
+
 
 var tick = new Audio('assets/tick.mp3');
+
+//tap variables
+//var d = new Date();
+var prev = 0;
+var current = 0;
 
 const metronome = new Metronome(tempo, true);
 
@@ -61,3 +73,4 @@ const metronome = new Metronome(tempo, true);
 document.getElementById("play").onclick = function() {metronome.play()};
 document.getElementById("pause").onclick = function() {metronome.pause()};
 document.getElementById("tempo").onchange = function() {metronome.setTempo(document.getElementById("tempo").value)};
+document.getElementById("tap").onclick = function() {metronome.tap()};
