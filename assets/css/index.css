@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #3c3c3d;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  left: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10em;
+  color: #f2f2f2;
+}
+
+#background {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.5;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Contact page */
+#contact {
+  font-family: 'Barlow', arial, sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+  color: #ddd;
+  position: absolute;
+  z-index: 999;
+}
+
+#splash-screen[data-state="display"] {
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#splash-screen[data-state="hidden"] {
+  margin-left: 100%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+ .slide-right {
+   margin-left: 100vw;
+ }
+
+ #splash-head {
+   text-align: center;
+ }
+
+ #splash-title {
+   font-size: 140pt;
+   font-weight: lighter;
+   letter-spacing: 20px;
+   margin: 20px;
+ }
+
+ #description {
+   font-size: 35pt;
+ }
+
+ #instructions {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ }
+
+ #get-started {
+   display: flex;
+   justify-content: center;
+ }
+
+ #option-container {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .option {
+   width: 33%;
+   border-right: solid;
+   border-width: thin;
+   padding: 20px;
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+ }
+
+ #last-option {
+   border: none;
+ }
+
+ #hide-splash {
+   display: flex;
+   justify-content: center;
+ }
+
+ #hide-button {
+   padding: 7px 37px;
+   border: 0 solid;
+   font-size: 30pt;
+   border-radius: 5px;
+   background-color: #efefef;
+   border-color: #333;
+   box-shadow: 2px 2px #aaa;
+   cursor: pointer;
+ }
+
+ #show-button {
+   border: 0 solid;
+   font-size: 1.5em;
+   border-radius: 5px;
+   background-color: #eee;
+   width: 30px;
+   height: 33vh;
+   left: -30px;
+   position: absolute;
+   opacity: 0.5;
+   transform: translate(0, 33vh);
+   padding: 2px;
+   cursor: pointer;
+ }
+
+ /* contact links */
+
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 12%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}

@@ -4,51 +4,50 @@
     <meta charset="UTF-8">
     <title>Michael Brattin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="index.js" type="text/javascript"></script>
   </head>
 
-  <body class="menu">
-    <header>
-      <nav>
-        <div class="navigation">
-          <ul class="nav-container">
-            <li id="gray" class="nav-items"><a href="nopageyet.html" target="_blank">I WENT TO PANAMA!</a></li>
-            <li id="dark-gray" class="nav-items"><a href="nopageyet.html" target="_blank">ABOUT</a></li>
-          </ul>
-        </div>
-      </nav>
+<body>
+  <div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#contact">Music</a>
+  </div>
 
+  <img id="background" src="assets/img/background.jpg"></img>
 
-      <nav class="menu-side">
-        <ul>
-          <li class="side-nav-items"><a href="nopageyet.html">PANAMA</a></li>
-          <li class="side-nav-items"><a href="nopageyet.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <a href="#" class="menu-toggle">
-      <div class="nav-button">
-        &#9776;
+    <div id="contact" data-state="display">
+        
+      <div id="splash-head">
+        <p id="splash-title">Find my music</p>
       </div>
-    </a>
 
-    <section class="page-content">
-      <div class="brand">
-        <div class="name">
-          <p>hey</p>
+      <div id="instructions">
+        <div id="option-container">
+          <div class="option">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          </div>
+          <div class="option">
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+          </div>
+          <div class="option" id="last-option">
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+          </div>
         </div>
-
-        <div class="info">
-          <p class="link"><a href="http://www.cchonthe.net" target="_blank">check out some cool stuff.</a></p>
-        </div>
+        
       </div>
-    </section>
-  </body>
+    </div>
+ 
+</body>
 </html>
